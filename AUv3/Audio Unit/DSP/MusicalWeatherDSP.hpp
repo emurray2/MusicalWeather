@@ -14,12 +14,12 @@ enum {
  Performs simple copying of the input signal to the output.
  As a non-ObjC class, this is safe to use from render thread.
  */
-class Musical_Weather_Audio_UnitDSPKernel : public DSPKernel {
+class MusicalWeatherDSP : public DSPKernel {
 public:
     
     // MARK: Member Functions
 
-    Musical_Weather_Audio_UnitDSPKernel() {}
+    MusicalWeatherDSP() {}
 
     void init(int channelCount, double inSampleRate) {
         chanCount = channelCount;

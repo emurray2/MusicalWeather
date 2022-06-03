@@ -6,7 +6,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Musical_Weather_Audio_UnitDSPKernelAdapter : NSObject
+@interface DSPKernelAdapter : NSObject
 
 @property (nonatomic) AUAudioFrameCount maximumFramesToRender;
 @property (nonatomic, readonly) AUAudioUnitBus *inputBus;

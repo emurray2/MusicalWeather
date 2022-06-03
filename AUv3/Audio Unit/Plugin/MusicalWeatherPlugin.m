@@ -1,13 +1,13 @@
 // Copyright Evan Murray. All Rights Reserved. Revision History at http://github.com/emurray2/MusicalWeather
 
-#import "Musical_Weather_Audio_UnitAudioUnit.h"
+#import "MusicalWeatherPlugin.h"
 
 #import <AVFoundation/AVFoundation.h>
 
 // Define parameter addresses.
 const AudioUnitParameterID myParam1 = 0;
 
-@interface Musical_Weather_Audio_UnitAudioUnit ()
+@interface MusicalWeatherPlugin ()
 
 @property (nonatomic, readwrite) AUParameterTree *parameterTree;
 @property AUAudioUnitBusArray *inputBusArray;
@@ -15,7 +15,7 @@ const AudioUnitParameterID myParam1 = 0;
 @end
 
 
-@implementation Musical_Weather_Audio_UnitAudioUnit
+@implementation MusicalWeatherPlugin
 @synthesize parameterTree = _parameterTree;
 
 - (instancetype)initWithComponentDescription:(AudioComponentDescription)componentDescription options:(AudioComponentInstantiationOptions)options error:(NSError **)outError {
@@ -23,7 +23,7 @@ const AudioUnitParameterID myParam1 = 0;
     
     if (self == nil) { return nil; }
 
-	_kernelAdapter = [[Musical_Weather_Audio_UnitDSPKernelAdapter alloc] init];
+	_kernelAdapter = [[DSPKernelAdapter alloc] init];
 
 	[self setupAudioBuses];
 	[self setupParameterTree];
@@ -65,7 +65,7 @@ const AudioUnitParameterID myParam1 = 0;
 
 - (void)setupParameterCallbacks {
 	// Make a local pointer to the kernel to avoid capturing self.
-	__block Musical_Weather_Audio_UnitDSPKernelAdapter * kernelAdapter = _kernelAdapter;
+	__block DSPKernelAdapter * kernelAdapter = _kernelAdapter;
 
 	// implementorValueObserver is called when a parameter changes value.
 	_parameterTree.implementorValueObserver = ^(AUParameter *param, AUValue value) {

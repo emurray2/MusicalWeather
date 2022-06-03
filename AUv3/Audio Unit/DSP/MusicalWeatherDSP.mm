@@ -4,12 +4,12 @@
 #import <CoreAudioKit/AUViewController.h>
 #import "DSPKernel.hpp"
 #import "BufferedAudioBus.hpp"
-#import "Musical_Weather_Audio_UnitDSPKernel.hpp"
-#import "Musical_Weather_Audio_UnitDSPKernelAdapter.h"
+#import "MusicalWeatherDSP.hpp"
+#import "DSPKernelAdapter.h"
 
-@implementation Musical_Weather_Audio_UnitDSPKernelAdapter {
+@implementation DSPKernelAdapter {
     // C++ members need to be ivars; they would be copied on access if they were properties.
-    Musical_Weather_Audio_UnitDSPKernel  _kernel;
+    MusicalWeatherDSP  _kernel;
     BufferedInputBus _inputBus;
 }
 
@@ -77,7 +77,7 @@
      render, we're doing it wrong.
      */
     // Specify captured objects are mutable.
-    __block Musical_Weather_Audio_UnitDSPKernel *state = &_kernel;
+    __block MusicalWeatherDSP *state = &_kernel;
     __block BufferedInputBus *input = &_inputBus;
 
     return ^AUAudioUnitStatus(AudioUnitRenderActionFlags 				*actionFlags,

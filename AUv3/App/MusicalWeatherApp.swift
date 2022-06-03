@@ -3,7 +3,7 @@
 import SwiftUI
 
 @main
-struct Musical_Weather_AppApp: App {
+struct MusicalWeatherApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

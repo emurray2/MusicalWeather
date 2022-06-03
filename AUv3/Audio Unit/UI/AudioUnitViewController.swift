@@ -16,7 +16,7 @@ public class AudioUnitViewController: AUViewController, AUAudioUnitFactory {
     }
     
     public func createAudioUnit(with componentDescription: AudioComponentDescription) throws -> AUAudioUnit {
-        audioUnit = try Musical_Weather_Audio_UnitAudioUnit(componentDescription: componentDescription, options: [])
+        audioUnit = try MusicalWeatherPlugin(componentDescription: componentDescription, options: [])
         
         return audioUnit!
     }
