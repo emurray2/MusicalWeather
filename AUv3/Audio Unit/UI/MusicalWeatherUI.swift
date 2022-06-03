@@ -2,7 +2,7 @@
 
 import CoreAudioKit
 
-public class AudioUnitViewController: AUViewController, AUAudioUnitFactory {
+public class MusicalWeatherUI: AUViewController, AUAudioUnitFactory {
     var audioUnit: AUAudioUnit?
     
     public override func viewDidLoad() {

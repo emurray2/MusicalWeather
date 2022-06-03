@@ -17,7 +17,7 @@
 		608FA1A928499E6F00B683C6 /* BufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 608FA1A828499E6F00B683C6 /* BufferedAudioBus.hpp */; };
 		608FA1AC28499E6F00B683C6 /* MusicalWeatherDSP.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 608FA1AB28499E6F00B683C6 /* MusicalWeatherDSP.hpp */; };
 		608FA1AE28499E6F00B683C6 /* MusicalWeatherDSP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 608FA1AD28499E6F00B683C6 /* MusicalWeatherDSP.mm */; };
-		608FA1B128499E6F00B683C6 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FA1B028499E6F00B683C6 /* AudioUnitViewController.swift */; };
+		608FA1B128499E6F00B683C6 /* MusicalWeatherUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FA1B028499E6F00B683C6 /* MusicalWeatherUI.swift */; };
 		608FA1B928499E6F00B683C6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608FA1B728499E6F00B683C6 /* MainInterface.storyboard */; };
 		608FA1BD28499E6F00B683C6 /* Musical Weather Audio Unit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 608FA19C28499E6F00B683C6 /* Musical Weather Audio Unit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -60,7 +60,7 @@
 		608FA1AA28499E6F00B683C6 /* DSPKernelAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSPKernelAdapter.h; sourceTree = "<group>"; };
 		608FA1AB28499E6F00B683C6 /* MusicalWeatherDSP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MusicalWeatherDSP.hpp; sourceTree = "<group>"; };
 		608FA1AD28499E6F00B683C6 /* MusicalWeatherDSP.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MusicalWeatherDSP.mm; sourceTree = "<group>"; };
-		608FA1B028499E6F00B683C6 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		608FA1B028499E6F00B683C6 /* MusicalWeatherUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicalWeatherUI.swift; sourceTree = "<group>"; };
 		608FA1B828499E6F00B683C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		608FA1BA28499E6F00B683C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60FDB81B2849B37700E6649C /* DSP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSP-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				608FA1B728499E6F00B683C6 /* MainInterface.storyboard */,
-				608FA1B028499E6F00B683C6 /* AudioUnitViewController.swift */,
+				608FA1B028499E6F00B683C6 /* MusicalWeatherUI.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -278,7 +278,7 @@
 			files = (
 				60013AB8284A6D5E0038A67D /* MusicalWeatherPlugin.swift in Sources */,
 				608FA1AE28499E6F00B683C6 /* MusicalWeatherDSP.mm in Sources */,
-				608FA1B128499E6F00B683C6 /* AudioUnitViewController.swift in Sources */,
+				608FA1B128499E6F00B683C6 /* MusicalWeatherUI.swift in Sources */,
 				608FA1A728499E6F00B683C6 /* DSPKernel.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
