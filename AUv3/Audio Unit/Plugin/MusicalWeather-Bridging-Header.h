@@ -1,3 +1,3 @@
 // Copyright Evan Murray. All Rights Reserved. Revision History at http://github.com/emurray2/MusicalWeather
 
-#import "MusicalWeatherPlugin.h"
+#import "DSPKernelAdapter.h"

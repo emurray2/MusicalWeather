@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60013AB8284A6D5E0038A67D /* MusicalWeatherPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60013AB7284A6D5E0038A67D /* MusicalWeatherPlugin.swift */; };
 		6025BE072849B6DB00629A1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6025BE062849B6DB00629A1E /* Preview Assets.xcassets */; };
 		608FA18D28499E4200B683C6 /* MusicalWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FA18C28499E4200B683C6 /* MusicalWeatherApp.swift */; };
 		608FA18F28499E4200B683C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FA18E28499E4200B683C6 /* ContentView.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		60013AB7284A6D5E0038A67D /* MusicalWeatherPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicalWeatherPlugin.swift; sourceTree = "<group>"; };
 		6025BE062849B6DB00629A1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		608FA18928499E4200B683C6 /* Musical Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Musical Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		608FA18C28499E4200B683C6 /* MusicalWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicalWeatherApp.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				60FDB81B2849B37700E6649C /* MusicalWeather-Bridging-Header.h */,
 				608FA19F28499E6F00B683C6 /* MusicalWeatherPlugin.h */,
 				608FA1A028499E6F00B683C6 /* MusicalWeatherPlugin.m */,
+				60013AB7284A6D5E0038A67D /* MusicalWeatherPlugin.swift */,
 			);
 			path = Plugin;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60013AB8284A6D5E0038A67D /* MusicalWeatherPlugin.swift in Sources */,
 				608FA1AE28499E6F00B683C6 /* MusicalWeatherDSP.mm in Sources */,
 				608FA1B128499E6F00B683C6 /* AudioUnitViewController.swift in Sources */,
 				608FA1A728499E6F00B683C6 /* DSPKernel.mm in Sources */,
