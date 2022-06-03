@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionAttributes</key>
+		<dict>
+			<key>AudioComponents</key>
+			<array>
+				<dict>
+					<key>description</key>
+					<string>An audio plugin which takes live weather conditions and uses them to control music in your DAW.</string>
+					<key>factoryFunction</key>
+					<string>$(PRODUCT_MODULE_NAME).AudioUnitViewController</string>
+					<key>manufacturer</key>
+					<string>Evmu</string>
+					<key>name</key>
+					<string>Evan Murray: Musical Weather</string>
+					<key>sandboxSafe</key>
+					<true/>
+					<key>subtype</key>
+					<string>muwe</string>
+					<key>tags</key>
+					<array>
+						<string>Effects</string>
+						<string>MIDI</string>
+					</array>
+					<key>type</key>
+					<string>aumf</string>
+					<key>version</key>
+					<integer>67072</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>NSExtensionMainStoryboard</key>
+		<string>MainInterface</string>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.AudioUnit-UI</string>
+	</dict>
+</dict>
+</plist>
