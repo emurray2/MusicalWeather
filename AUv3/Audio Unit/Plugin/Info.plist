@@ -12,7 +12,7 @@
 					<key>description</key>
 					<string>An audio plugin which takes live weather conditions and uses them to control music in your DAW.</string>
 					<key>factoryFunction</key>
-					<string>$(PRODUCT_MODULE_NAME).AudioUnitViewController</string>
+					<string>$(PRODUCT_MODULE_NAME).MusicalWeatherUI</string>
 					<key>manufacturer</key>
 					<string>Evmu</string>
 					<key>name</key>
