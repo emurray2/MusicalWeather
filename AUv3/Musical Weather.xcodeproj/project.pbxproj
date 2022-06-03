@@ -12,7 +12,6 @@
 		608FA18D28499E4200B683C6 /* MusicalWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FA18C28499E4200B683C6 /* MusicalWeatherApp.swift */; };
 		608FA18F28499E4200B683C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FA18E28499E4200B683C6 /* ContentView.swift */; };
 		608FA19128499E4200B683C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608FA19028499E4200B683C6 /* Assets.xcassets */; };
-		608FA1A128499E6F00B683C6 /* MusicalWeatherPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 608FA1A028499E6F00B683C6 /* MusicalWeatherPlugin.m */; };
 		608FA1A528499E6F00B683C6 /* DSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 608FA1A428499E6F00B683C6 /* DSPKernel.hpp */; };
 		608FA1A728499E6F00B683C6 /* DSPKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 608FA1A628499E6F00B683C6 /* DSPKernel.mm */; };
 		608FA1A928499E6F00B683C6 /* BufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 608FA1A828499E6F00B683C6 /* BufferedAudioBus.hpp */; };
@@ -55,8 +54,6 @@
 		608FA18E28499E4200B683C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		608FA19028499E4200B683C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		608FA19C28499E6F00B683C6 /* Musical Weather Audio Unit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Musical Weather Audio Unit.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		608FA19F28499E6F00B683C6 /* MusicalWeatherPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicalWeatherPlugin.h; sourceTree = "<group>"; };
-		608FA1A028499E6F00B683C6 /* MusicalWeatherPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicalWeatherPlugin.m; sourceTree = "<group>"; };
 		608FA1A428499E6F00B683C6 /* DSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DSPKernel.hpp; sourceTree = "<group>"; };
 		608FA1A628499E6F00B683C6 /* DSPKernel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DSPKernel.mm; sourceTree = "<group>"; };
 		608FA1A828499E6F00B683C6 /* BufferedAudioBus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BufferedAudioBus.hpp; sourceTree = "<group>"; };
@@ -161,8 +158,6 @@
 			children = (
 				608FA1BA28499E6F00B683C6 /* Info.plist */,
 				60FDB81B2849B37700E6649C /* MusicalWeather-Bridging-Header.h */,
-				608FA19F28499E6F00B683C6 /* MusicalWeatherPlugin.h */,
-				608FA1A028499E6F00B683C6 /* MusicalWeatherPlugin.m */,
 				60013AB7284A6D5E0038A67D /* MusicalWeatherPlugin.swift */,
 			);
 			path = Plugin;
@@ -285,7 +280,6 @@
 				608FA1AE28499E6F00B683C6 /* MusicalWeatherDSP.mm in Sources */,
 				608FA1B128499E6F00B683C6 /* AudioUnitViewController.swift in Sources */,
 				608FA1A728499E6F00B683C6 /* DSPKernel.mm in Sources */,
-				608FA1A128499E6F00B683C6 /* MusicalWeatherPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
