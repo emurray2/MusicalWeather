@@ -47,6 +47,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		078EB241284C077300C3A4D0 /* Musical Weather App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Musical Weather App.entitlements"; sourceTree = "<group>"; };
+		078EB242284C077300C3A4D0 /* Musical Weather Audio Unit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Musical Weather Audio Unit.entitlements"; sourceTree = "<group>"; };
 		60013AB7284A6D5E0038A67D /* MusicalWeatherPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicalWeatherPlugin.swift; sourceTree = "<group>"; };
 		6025BE062849B6DB00629A1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		608FA18928499E4200B683C6 /* Musical Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Musical Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,8 @@
 		6021D60128499893002E100C = {
 			isa = PBXGroup;
 			children = (
+				078EB242284C077300C3A4D0 /* Musical Weather Audio Unit.entitlements */,
+				078EB241284C077300C3A4D0 /* Musical Weather App.entitlements */,
 				608FA18B28499E4200B683C6 /* App */,
 				608FA19E28499E6F00B683C6 /* Audio Unit */,
 				608FA18A28499E4200B683C6 /* Products */,
@@ -339,6 +343,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Musical Weather App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -380,6 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.auraaudio.Musical-Weather-App";
 				PRODUCT_NAME = "Musical Weather";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -423,6 +429,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Musical Weather App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -457,6 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.auraaudio.Musical-Weather-App";
 				PRODUCT_NAME = "Musical Weather";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -498,6 +506,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Musical Weather Audio Unit.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -537,6 +546,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Audio Unit/DSP/DSP-Bridging-Header.h";
@@ -578,6 +588,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Musical Weather Audio Unit.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -610,6 +621,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Audio Unit/DSP/DSP-Bridging-Header.h";
