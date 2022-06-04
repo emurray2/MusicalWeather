@@ -24,6 +24,16 @@ public class MusicalWeatherPlugin: AUAudioUnit {
         kernelAdapter = DSPKernelAdapter()
         try super.init(componentDescription: componentDescription, options: options)
     }
+    public override var maximumFramesToRender: AUAudioFrameCount {
+        get {
+            return kernelAdapter.maximumFramesToRender
+        }
+        set {
+            if !renderResourcesAllocated {
+                kernelAdapter.maximumFramesToRender = newValue
+            }
+        }
+    }
     public override func allocateRenderResources() throws {
         if kernelAdapter.outputBus.format.channelCount != kernelAdapter.inputBus.format.channelCount {
             throw NSError(domain: NSOSStatusErrorDomain, code: Int(kAudioUnitErr_FailedInitialization), userInfo: nil)
