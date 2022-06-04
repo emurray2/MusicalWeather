@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		60013AB8284A6D5E0038A67D /* MusicalWeatherPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60013AB7284A6D5E0038A67D /* MusicalWeatherPlugin.swift */; };
+		60013AB9284AE2DF0038A67D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FA18E28499E4200B683C6 /* ContentView.swift */; };
 		6025BE072849B6DB00629A1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6025BE062849B6DB00629A1E /* Preview Assets.xcassets */; };
 		608FA18D28499E4200B683C6 /* MusicalWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FA18C28499E4200B683C6 /* MusicalWeatherApp.swift */; };
 		608FA18F28499E4200B683C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FA18E28499E4200B683C6 /* ContentView.swift */; };
@@ -18,7 +19,6 @@
 		608FA1AC28499E6F00B683C6 /* MusicalWeatherDSP.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 608FA1AB28499E6F00B683C6 /* MusicalWeatherDSP.hpp */; };
 		608FA1AE28499E6F00B683C6 /* MusicalWeatherDSP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 608FA1AD28499E6F00B683C6 /* MusicalWeatherDSP.mm */; };
 		608FA1B128499E6F00B683C6 /* MusicalWeatherUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FA1B028499E6F00B683C6 /* MusicalWeatherUI.swift */; };
-		608FA1B928499E6F00B683C6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608FA1B728499E6F00B683C6 /* MainInterface.storyboard */; };
 		608FA1BD28499E6F00B683C6 /* Musical Weather Audio Unit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 608FA19C28499E6F00B683C6 /* Musical Weather Audio Unit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,6 @@
 		608FA1AB28499E6F00B683C6 /* MusicalWeatherDSP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MusicalWeatherDSP.hpp; sourceTree = "<group>"; };
 		608FA1AD28499E6F00B683C6 /* MusicalWeatherDSP.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MusicalWeatherDSP.mm; sourceTree = "<group>"; };
 		608FA1B028499E6F00B683C6 /* MusicalWeatherUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicalWeatherUI.swift; sourceTree = "<group>"; };
-		608FA1B828499E6F00B683C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		608FA1BA28499E6F00B683C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60FDB81B2849B37700E6649C /* DSP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSP-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,7 +147,6 @@
 		608FA1AF28499E6F00B683C6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				608FA1B728499E6F00B683C6 /* MainInterface.storyboard */,
 				608FA1B028499E6F00B683C6 /* MusicalWeatherUI.swift */,
 			);
 			path = UI;
@@ -254,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				608FA1A528499E6F00B683C6 /* DSPKernel.hpp in Resources */,
-				608FA1B928499E6F00B683C6 /* MainInterface.storyboard in Resources */,
 				608FA1AC28499E6F00B683C6 /* MusicalWeatherDSP.hpp in Resources */,
 				608FA1A928499E6F00B683C6 /* BufferedAudioBus.hpp in Resources */,
 			);
@@ -277,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60013AB8284A6D5E0038A67D /* MusicalWeatherPlugin.swift in Sources */,
+				60013AB9284AE2DF0038A67D /* ContentView.swift in Sources */,
 				608FA1AE28499E6F00B683C6 /* MusicalWeatherDSP.mm in Sources */,
 				608FA1B128499E6F00B683C6 /* MusicalWeatherUI.swift in Sources */,
 				608FA1A728499E6F00B683C6 /* DSPKernel.mm in Sources */,
@@ -292,17 +290,6 @@
 			targetProxy = 608FA1BB28499E6F00B683C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		608FA1B728499E6F00B683C6 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				608FA1B828499E6F00B683C6 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6021D60628499893002E100C /* Debug */ = {
