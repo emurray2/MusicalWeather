@@ -1,6 +1,7 @@
 // Copyright Evan Murray. All Rights Reserved. Revision History at http://github.com/emurray2/MusicalWeather
 
 import Foundation
+import CoreAudioKit
 
 public class MusicalWeatherPlugin: AUAudioUnit {
     private let kernelAdapter: DSPKernelAdapter
@@ -19,6 +20,17 @@ public class MusicalWeatherPlugin: AUAudioUnit {
     }
     public override var outputBusses: AUAudioUnitBusArray {
         return outputBusArray
+    }
+    // MARK: View Configurations
+    public override func supportedViewConfigurations(_ availableViewConfigurations: [AUAudioUnitViewConfiguration]) -> IndexSet {
+        var indexSet = IndexSet()
+
+        let config = AUAudioUnitViewConfiguration(width: 0.0, height: 0.0, hostHasController: false)
+        for (_, _) in [config].enumerated() {
+            indexSet.insert(0)
+        }
+        select(config)
+        return indexSet
     }
     public override init(componentDescription: AudioComponentDescription, options: AudioComponentInstantiationOptions = []) throws {
         kernelAdapter = DSPKernelAdapter()
